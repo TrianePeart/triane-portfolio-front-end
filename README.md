@@ -2,15 +2,15 @@
 
 This project is designed to test all of the skills you've learned so far. By the end of this project, you should have a portfolio-ready project you can share on your resume as well as with potential employers.
 
-## Back-End Link
-https://github.com/TrianePeart/Triane-Portfolio-Backend/blob/main/README.md
-
 This project will:
 
 - Have a deployed back-end application.
 - Have a deployed front-end application.
 - Have a database with one or more tables.
 - Have a theme and unique product design.
+
+## Back-End Link
+https://github.com/TrianePeart/Triane-Portfolio-Backend/blob/main/README.md
 
 ## Proposal:
 I am creating a writing app where people can post their writing. 
@@ -44,6 +44,10 @@ I am creating a writing app where people can post their writing.
 
 **JD suggests**
 >For this iteration, I would suggest creating the writings, maybe seeding some of the writings so that the user can see all writings. Focus on the crud for the writings. If you are able to get that done, you can actually easily count the words with a function in your front or back-end using a function so that part seems doable. I would hold off on the dictionary api. If you finish all this I would maybe work on bookmark next. copy infringement page is not a tough goal either. You could create a modal that popped up after a certain time with the TOS if you wanted and you have to click Agree in order to continue. That's a stretch goal though.
+
+##Trello Board
+
+<img width="1420" alt="Screenshot 2023-02-07 at 4 14 28 PM" src="https://user-images.githubusercontent.com/87388431/217367041-9795250a-9fb0-46f6-99fd-3dcac1bec01e.png">
 
 ## Success criteria
 
