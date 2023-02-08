@@ -27,6 +27,11 @@ I am creating a writing app where people can post their writing.
 
 4. As a User, I can utilize the search bar on the home page to find as well as filter articles by topics.
 
+**Flow Chart**
+
+![20230208_153600](https://user-images.githubusercontent.com/87388431/217645685-c32f1e03-6c6a-4d4f-94c8-4474b7ad7fa1.jpg)
+
+
 **Stretch features**
 
 1. As a User, when navigated to the create page, I will be taken to a form that counts words entered as well as suggests synonyms from a dictionary API while writing
@@ -41,13 +46,21 @@ I am creating a writing app where people can post their writing.
 
 1. As a user, I will see a comment, like, and view feature.
 
+**Data Base Diagram**
+
+<img width="698" alt="Screenshot 2023-02-08 at 3 57 38 PM" src="https://user-images.githubusercontent.com/87388431/217649333-c57cfde1-c4cf-4f05-b9c0-9a19b2044281.png">
 
 **JD suggests**
 >For this iteration, I would suggest creating the writings, maybe seeding some of the writings so that the user can see all writings. Focus on the crud for the writings. If you are able to get that done, you can actually easily count the words with a function in your front or back-end using a function so that part seems doable. I would hold off on the dictionary api. If you finish all this I would maybe work on bookmark next. copy infringement page is not a tough goal either. You could create a modal that popped up after a certain time with the TOS if you wanted and you have to click Agree in order to continue. That's a stretch goal though.
 
-##Trello Board
+## Trello Board
 
-<img width="1420" alt="Screenshot 2023-02-07 at 4 14 28 PM" src="https://user-images.githubusercontent.com/87388431/217367041-9795250a-9fb0-46f6-99fd-3dcac1bec01e.png">
+<img width="1440" alt="Screenshot 2023-02-08 at 3 32 29 PM" src="https://user-images.githubusercontent.com/87388431/217644924-81fcfa3b-b5b8-4893-aba8-36ac06da2a0d.png">
+
+## Final Results 
+
+**POST SCREENSHOT HERE WHEN DONE**
+
 
 ## Success criteria
 
