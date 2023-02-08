@@ -57,6 +57,7 @@ I am creating a writing app where people can post their writing.
 ## Trello Board
 
 <img width="1440" alt="Screenshot 2023-02-08 at 3 32 29 PM" src="https://user-images.githubusercontent.com/87388431/217644924-81fcfa3b-b5b8-4893-aba8-36ac06da2a0d.png">
+https://trello.com/b/GFs2Fn7g/write-tings-to-do-board
 
 ## Final Results 
 
