@@ -7,6 +7,7 @@ This project will:
 - Have a deployed back-end application.
 - Have a deployed front-end application.
 - Have a database with one or more tables.
+
 - Have a theme and unique product design.
 
 ## Back-End Link
@@ -29,7 +30,7 @@ I am creating a writing app where people can post their writing.
 
 **Flow Chart**
 
-<img width="698" alt="drawing out my ideas" src="https://user-images.githubusercontent.com/87388431/217649333-c57cfde1-c4cf-4f05-b9c0-9a19b2044281.png](https://user-images.githubusercontent.com/87388431/217650347-24682a98-9235-4c85-9191-8c92db0f780e.jpg">
+<img width="461" alt="Screenshot 2023-02-08 at 4 05 03 PM" src="https://user-images.githubusercontent.com/87388431/217650610-4fe101bc-ccad-4dd3-8da0-fe6b93192533.png">
 
 
 **Stretch features**
