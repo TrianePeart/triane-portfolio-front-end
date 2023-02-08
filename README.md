@@ -30,7 +30,7 @@ I am creating a writing app where people can post their writing.
 
 **Flow Chart**
 
-<p align="center"> <img width="461" alt="Screenshot 2023-02-08 at 4 05 03 PM" src="https://user-images.githubusercontent.com/87388431/217650610-4fe101bc-ccad-4dd3-8da0-fe6b93192533.png"></p>
+<p align="center"> <img width="461" height='400' alt="Screenshot 2023-02-08 at 4 05 03 PM" src="https://user-images.githubusercontent.com/87388431/217650610-4fe101bc-ccad-4dd3-8da0-fe6b93192533.png"></p>
 
 
 **Stretch features**
@@ -49,7 +49,7 @@ I am creating a writing app where people can post their writing.
 
 **Data Base Diagram**
 
-<img width="698" alt="Screenshot 2023-02-08 at 3 57 38 PM" src="https://user-images.githubusercontent.com/87388431/217649333-c57cfde1-c4cf-4f05-b9c0-9a19b2044281.png">
+<p align="center"> <img width="698" alt="Screenshot 2023-02-08 at 3 57 38 PM" src="https://user-images.githubusercontent.com/87388431/217649333-c57cfde1-c4cf-4f05-b9c0-9a19b2044281.png"></p>
 
 **JD suggests**
 >For this iteration, I would suggest creating the writings, maybe seeding some of the writings so that the user can see all writings. Focus on the crud for the writings. If you are able to get that done, you can actually easily count the words with a function in your front or back-end using a function so that part seems doable. I would hold off on the dictionary api. If you finish all this I would maybe work on bookmark next. copy infringement page is not a tough goal either. You could create a modal that popped up after a certain time with the TOS if you wanted and you have to click Agree in order to continue. That's a stretch goal though.
