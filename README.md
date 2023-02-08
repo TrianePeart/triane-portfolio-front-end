@@ -30,7 +30,7 @@ I am creating a writing app where people can post their writing.
 
 **Flow Chart**
 
-<img width="461" alt="Screenshot 2023-02-08 at 4 05 03 PM" src="https://user-images.githubusercontent.com/87388431/217650610-4fe101bc-ccad-4dd3-8da0-fe6b93192533.png">
+<p align="center"> <img width="461" alt="Screenshot 2023-02-08 at 4 05 03 PM" src="https://user-images.githubusercontent.com/87388431/217650610-4fe101bc-ccad-4dd3-8da0-fe6b93192533.png"></p>
 
 
 **Stretch features**
