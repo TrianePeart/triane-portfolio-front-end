@@ -29,7 +29,7 @@ I am creating a writing app where people can post their writing.
 
 **Flow Chart**
 
-![20230208_153600](https://user-images.githubusercontent.com/87388431/217645685-c32f1e03-6c6a-4d4f-94c8-4474b7ad7fa1.jpg)
+<img width="698" alt="Drawing Out my ideas" src="https://user-images.githubusercontent.com/87388431/217649333-c57cfde1-c4cf-4f05-b9c0-9a19b2044281.png](https://user-images.githubusercontent.com/87388431/217645685-c32f1e03-6c6a-4d4f-94c8-4474b7ad7fa1.jpg">
 
 
 **Stretch features**
