@@ -1,0 +1,1 @@
+//Shows one of the post

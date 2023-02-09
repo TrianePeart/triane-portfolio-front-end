@@ -1,23 +1,39 @@
-import logo from './logo.svg';
+//DEPENDENCIES 
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+
+//PAGES
+import Edit from '../pages/Edit';
+import FourOFour from '../pages/Edit';
+import Home from '../pages/Home';
+import NewPost from '../pages/NewPost';
+import Show from '../pages/Show';
+
+//COMPONENTS
+import Nav from './components/Nav';
+import Login from './components/Login';
+import SignUp from './components/SignUp';
+import { useState } from 'react';
+
+
 import './App.css';
 
 function App() {
+  const [showNav, setShowNav] = useState(true)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Nav/>
+        <Routes>
+          <Route path='/' element={<Login navFunction={setShowNav}/>}/>
+          {/* FIGURE OUT IF SIGN UP NEEDS ITS OWN PAGE */}
+          <Route path='/posts' element={<Home/>}/>
+          <Route path='/posts/new' element={<NewPost/>}/>
+          <Route exact path='/posts/:id' element={<Show/>}/>
+          <Route path='/posts/:id/edit' element={<Edit/>}/>
+          <Route path="*" element={<FourOFour />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
