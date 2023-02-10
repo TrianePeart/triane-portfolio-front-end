@@ -2,11 +2,11 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 //PAGES
-import Edit from '../pages/Edit';
-import FourOFour from '../pages/Edit';
-import Home from '../pages/Home';
-import NewPost from '../pages/NewPost';
-import Show from '../pages/Show';
+import Edit from '../src/pages/Edit';
+import FourOFour from '../src/pages/FourOFour';
+import Home from '../src/pages/Home';
+import NewPost from './pages/NewThing';
+import Show from './pages/ShowThing';
 
 //COMPONENTS
 import Nav from './components/Nav';
@@ -15,9 +15,9 @@ import SignUp from './components/SignUp';
 import { useState } from 'react';
 
 
-import './App.css';
+import '../src/css folders/App.css';
 
-function App() {
+export default function App() {
   const [showNav, setShowNav] = useState(true)
 
   return (
@@ -37,5 +37,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
