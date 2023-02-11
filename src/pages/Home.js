@@ -1,8 +1,9 @@
-//Home page that shows all the post 
+import Posts from '../components/Posts'
 export default function Home () {
     return(
         <div>
-            <h1>Home = Index Page AFTER login</h1>
+            <h1>Tingz Posted</h1>
+            <Posts/>
         </div> 
     )
 }

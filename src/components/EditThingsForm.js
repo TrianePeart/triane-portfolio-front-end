@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
 import {useParams, Link, useNavigate} from 'react-router-dom'
-import axios from 'react-axios'
+import axios from 'axios'
 const API = process.env.REACT_APP_API
 
 export default function EditForm(){
@@ -34,13 +34,11 @@ export default function EditForm(){
         setThing({...postThing, [event.target.id]: event.target.value}); 
     };
 
-    const handleLiked = () => {
-        setThing({...postThing, is_liked: !postThing.is_liked});
-    }
-
     const handleBookMark = () => {
         setThing({...postThing, is_bookmarked: !postThing.is_bookmarked});
     }
+
+    // MOVE TO HELPER FUNCTIONS
 
     useEffect(() => {
         axios.get(`${API}/posts/${id}`).then(
@@ -97,15 +95,6 @@ export default function EditForm(){
                 onChange={handleTextChange}
                 require
                 />
-                {/* Liked Might have to be moved to show */}
-                <label htmlFor='is_liked'>Liked:</label>
-                <input
-                id='is_liked'
-                type='checkbox'
-                onChange={handleLiked}
-                checked={postThing.is_liked}
-                />
-                {/* Book mark should be both in create and show */}
                 <label htmlFor='is_bookmarked'>BookMark:</label>
                 <input
                 id='is_bookmarked'
@@ -113,7 +102,6 @@ export default function EditForm(){
                 onChange={handleBookMark}
                 checked={postThing.is_bookmarked}
                 />
-
                 <br/>
                 <input type='submit'/>
             </form>

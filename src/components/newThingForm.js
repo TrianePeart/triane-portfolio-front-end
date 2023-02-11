@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
-import axios from 'react-axios'
+import axios from 'axios'
 const API = process.env.REACT_APP_API
 
 /* 
@@ -34,20 +34,19 @@ export default function NewThingForm(){
         .catch((c) => console.warn('catch', c));
     };
 
-    //This seems to be correct
-
     const handleSubmit = (event) => {
         event.preventDefault();
         createNew(postThing);
     };
 
     const handleTextChange = (event) => {
-        setThing({ ...postThing, [event.target.id]: event.target.value});
+        setThing({ ...postThing, [event.target.id]: event.target.value });
     };
 
     return(
         <div className='NewThingz'>
             <form onSubmit={handleSubmit}>
+
                 {/* Title Of Post*/} 
                 <label htmlFor='title'>Title:</label>
                 <input
@@ -58,8 +57,10 @@ export default function NewThingForm(){
                 placeholder='Title Of Thing'
                 required
                 />
+
                 <br/>
                 <br/>
+
                 {/* Name Of Author */}
                  <label htmlFor='author'>Author Name:</label>
                 <input
@@ -70,8 +71,10 @@ export default function NewThingForm(){
                 placeholder="Written By"
                 require
                 />
+
                 <br/>
                 <br/>
+
                 {/* Category Of Post */}
                 <label htmlFor='post_type'>Category:</label>
                 <input
@@ -82,8 +85,10 @@ export default function NewThingForm(){
                 placeholder="Random, Article, Poetry..."
                 require
                 />
+
                 <br/>
                 <br/>
+
                 {/* Content Of Post */}
                 <label htmlFor='content'>Write Post</label>
                 <textarea
@@ -93,9 +98,11 @@ export default function NewThingForm(){
                 onChange={handleTextChange}
                 require
                 />
+
                  <br/>
                  <br/>
-                <input type='submit'/>
+
+            <input type='submit'/>
             </form>
              <Link to={`/posts`}>
                  <button>Cancel</button>
