@@ -1,7 +1,6 @@
 import {useState, useEffect} from 'react'
 import {useParams, Link, useNavigate} from 'react-router-dom'
 import axios from 'react-axios'
-import { placeholder } from '@babel/types';
 const API = process.env.REACT_APP_API
 
 export default function EditForm(){
