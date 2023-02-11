@@ -2,6 +2,12 @@ import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import axios from 'react-axios'
 const API = process.env.REACT_APP_API
+
+/* 
+FILE MEMOS: Submit not functioning. 
+Input and Textarea are not pleasing to the eye. Correct later
+get rid of breaks </br> in code and make cute with CSS
+*/
    
 
 export default function NewThingForm(){
@@ -52,6 +58,8 @@ export default function NewThingForm(){
                 placeholder='Title Of Thing'
                 required
                 />
+                <br/>
+                <br/>
                 {/* Name Of Author */}
                  <label htmlFor='author'>Author Name:</label>
                 <input
@@ -62,6 +70,8 @@ export default function NewThingForm(){
                 placeholder="Written By"
                 require
                 />
+                <br/>
+                <br/>
                 {/* Category Of Post */}
                 <label htmlFor='post_type'>Category:</label>
                 <input
@@ -72,8 +82,10 @@ export default function NewThingForm(){
                 placeholder="Random, Article, Poetry..."
                 require
                 />
+                <br/>
+                <br/>
                 {/* Content Of Post */}
-                 <label htmlFor='content'>Write Post</label>
+                <label htmlFor='content'>Write Post</label>
                 <textarea
                 id='content'
                 value={postThing.content}
@@ -81,6 +93,7 @@ export default function NewThingForm(){
                 onChange={handleTextChange}
                 require
                 />
+                 <br/>
                  <br/>
                 <input type='submit'/>
             </form>
