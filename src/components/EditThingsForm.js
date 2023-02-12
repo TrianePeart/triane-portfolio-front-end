@@ -85,7 +85,7 @@ export default function EditForm(){
                 {/* Category Of Post */}
                 <label htmlFor='category'>Category:</label>
                 <input
-                id='category'
+                id='post_type'
                 value={postThing.post_type}
                 type='text'
                 onChange={handleTextChange}
