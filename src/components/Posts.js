@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'; 
 import Post from './Post'
 import axios from 'axios'
-import App from '../css folders/App.css'
+
 
 const API = process.env.REACT_APP_API
 

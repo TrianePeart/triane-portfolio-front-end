@@ -11,11 +11,10 @@ import Show from './pages/ShowThing';
 //COMPONENTS
 import Nav from './components/Nav';
 import Login from './components/Login';
-import SignUp from './components/SignUp';
 import { useState } from 'react';
 
 
-import '../src/css folders/App.css';
+import '../src/css/App.css';
 
 export default function App() {
   const [showNav, setShowNav] = useState(true)
