@@ -10,15 +10,26 @@ export default function EditForm(){
     const [postThing, setThing] = useState({
         title: '', 
         author: '', 
-        content: '', 
+        content: '',
         post_type: '',
         update_at: '', 
         created_at: '', 
     }); 
 
-    const updateForm = (updateForm) => {
+    const [wordCount, setWordCount] = useState(0);
+
+    useEffect(() => {
+        axios.get(`${API}/posts/${id}`).then(
+            (res) => setThing(res.data),
+            (error) => navigate(`/not-found`)
+        );
+    }, [id, navigate]);
+
+// NEW WORD COUNTER IN USE EFFECT. MOVE TO HELPER
+
+    const updateForm = () => {
         axios
-        .put(`${API}/posts/${id}`, updateForm)
+        .put(`${API}/posts/${id}`)
         .then(
             () => {
                 navigate(`/posts/${id}`);
@@ -28,35 +39,20 @@ export default function EditForm(){
         .catch((c) => console.warn('catch', c))
     }; 
 
-    const handleTextChange = (event) => {
-        setThing({...postThing, [event.target.id]: event.target.value}); 
-    };
-
-
-    
-      
-    const handleCount = ("input", () => {
-    let wordCount = document.getElementById('word-count');
-    let contentInput = document.getElementById('content')
-        //trim() method removes whitespace from both ends of a string
-           let txt = contentInput.value.trim();
-        //txt.split(/\s+/) code will split the full classname of an element into an array containing every class
-           wordCount.textContent = txt.split(/\s+/).filter((item) => item).length;
-    });
- 
-    // MOVE TO HELPER FUNCTIONS
-
     useEffect(() => {
-        axios.get(`${API}/posts/${id}`).then(
-            (res) => setThing(res.data),
-            (error) => navigate(`/not-found`)
-        );
-    }, [id, navigate]);
+        setWordCount(postThing.content.split(/\s+/).filter((item) => item).length)
+       },[postThing]);
+    
+    const handleTextChange = (event) => {
+            setThing({...postThing, [event.target.id]: event.target.value});
+    };
 
     const handleSubmit = (event) => {
         event.preventDefault();  
-        updateForm(postThing, id);
-    }; 
+        updateForm(postThing);
+    };
+
+
 
     return (
         <div className='Edit'>
@@ -103,10 +99,9 @@ export default function EditForm(){
                 onChange={handleTextChange}
                 require
                 />
-                {/* <>{wordCount()}</> */}
+                {/* <>{WordCounter()}</> */}
                 <div>
-                    <h3 id="word-count">{handleCount()}</h3>
-                    <p>words</p>
+                    <p>{wordCount} words</p>
                 </div>
                 <br/>
                 <input type='submit'/>
