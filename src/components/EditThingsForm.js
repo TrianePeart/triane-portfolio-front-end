@@ -18,18 +18,9 @@ export default function EditForm(){
 
     const [wordCount, setWordCount] = useState(0);
 
-    useEffect(() => {
-        axios.get(`${API}/posts/${id}`).then(
-            (res) => setThing(res.data),
-            (error) => navigate(`/not-found`)
-        );
-    }, [id, navigate]);
-
-// NEW WORD COUNTER IN USE EFFECT. MOVE TO HELPER
-
-    const updateForm = () => {
+    const updateForm = (updateForm) => {
         axios
-        .put(`${API}/posts/${id}`)
+        .put(`${API}/posts/${id}`, updateForm)
         .then(
             () => {
                 navigate(`/posts/${id}`);
@@ -39,6 +30,8 @@ export default function EditForm(){
         .catch((c) => console.warn('catch', c))
     }; 
 
+    //COUNTER USE EFFECT. MOVE TO HELPERS WHEN REFACTORING 
+
     useEffect(() => {
         setWordCount(postThing.content.split(/\s+/).filter((item) => item).length)
        },[postThing]);
@@ -46,6 +39,15 @@ export default function EditForm(){
     const handleTextChange = (event) => {
             setThing({...postThing, [event.target.id]: event.target.value});
     };
+
+    //NOT FOUND USE EFFECT. MOVE TO HELPERS WHEN REFACTOR
+    useEffect(() => {
+        axios.get(`${API}/posts/${id}`).then(
+            (res) => setThing(res.data),
+            (error) => navigate(`/not-found`)
+        );
+    }, [id, navigate]);
+
 
     const handleSubmit = (event) => {
         event.preventDefault();  
@@ -68,6 +70,7 @@ export default function EditForm(){
                 placeholder='Title Of Thing'
                 required
                 />
+
                 {/* Name Of Author */}
                 <label htmlFor='author'>Author Name:</label>
                 <input
@@ -78,6 +81,7 @@ export default function EditForm(){
                 placeholder="Written By"
                 require
                 />
+
                 {/* Category Of Post */}
                 <label htmlFor='category'>Category:</label>
                 <input
@@ -88,6 +92,7 @@ export default function EditForm(){
                 placeholder="Random, Article, Poetry..."
                 require
                 />
+
                 {/* Content Of Post */}
                 <label htmlFor='content'>Write Post</label>
                 <textarea
@@ -99,8 +104,8 @@ export default function EditForm(){
                 onChange={handleTextChange}
                 require
                 />
-                {/* <>{WordCounter()}</> */}
-                <div>
+
+                <div className='countDiv'>
                     <p>{wordCount} words</p>
                 </div>
                 <br/>
