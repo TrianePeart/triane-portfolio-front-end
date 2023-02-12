@@ -12,26 +12,79 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  
   /* This is the overall background just change later */
 }
 
 ul{
   list-style: none;
+  width: 50%;
+  height:50%;
+  padding-left: 25%;
 }
 
 
 
 li{
-  width: 700px; 
+  /* width: 700px;  */
+  box-sizing: content-box;
+  display: grid;
   border-style: inset; 
   border-top-width: 1px; 
   border-color: white; 
-  padding: 4%;
-  margin: auto;
-  border-bottom-right-radius:15% ;
+  padding: 18%;
+  border-bottom-right-radius:20%;
+  border-top-left-radius:20%;
   text-decoration: none;
+  margin-bottom: 20px;
+  text-align: center;
+  white-space: break-spaces;
+  position: relative;
+  background-color: black;
+  /* transition: transform .2s; */
+  /* I can't see so...  */
 }
+
+/* li:hover{
+  transform: scale(1.5);
+  /* The hover that makes the LI big 
+} */
+
+form {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+input[type=text] {
+  display: grid;
+  justify-content: center;
+  outline: none;
+  margin:10px 0; 
+  transition: width 0.4s ease-in-out;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+}
+
+input[type=text]focus {
+  width: 50%;
+}
+
+
+textarea{
+  margin-top: 10%;
+  padding:10%;
+  text-align: center;
+  border: outset 4px white;
+  resize: none;
+  background-color: #282c34;
+  color: white;
+  outline: none;
+ 
+}
+
 
 
 h1 {
