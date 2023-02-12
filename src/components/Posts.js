@@ -15,10 +15,12 @@ function Posts(){
         .catch((error) => console.log(error))
     }, []);
 
+    const sortPosts = posts.sort((a, b) => b.id - a.id); 
+    // sorting it by date so I can find stuff
     return(
         <div className='Posts'>
             <ul className='posts'>
-                {posts.map((post) =>{
+                {sortPosts.map((post) =>{
                     return (
                         <li key={post.id}>
                             <Post post={post}/>
