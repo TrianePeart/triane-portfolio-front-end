@@ -14,8 +14,6 @@ export default function EditForm(){
         post_type: '',
         update_at: '', 
         created_at: '', 
-        is_liked: false, 
-        is_bookmarked: false,
     }); 
 
     const updateForm = (updateForm) => {
@@ -41,7 +39,7 @@ export default function EditForm(){
     let wordCount = document.getElementById('word-count');
     let contentInput = document.getElementById('content')
         //trim() method removes whitespace from both ends of a string
-           let txt =contentInput.value.trim();
+           let txt = contentInput.value.trim();
         //txt.split(/\s+/) code will split the full classname of an element into an array containing every class
            wordCount.textContent = txt.split(/\s+/).filter((item) => item).length;
     });
