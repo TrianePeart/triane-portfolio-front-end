@@ -34,24 +34,13 @@ li{
 }
 
 
-
-/* .Nav li{
-  
-
-  display: block;
-  color: white;
-  text-align: center;
-  
- 
+h1 {
+font-family: cursive;
+position: relative;
+text-align: center;
+white-space: wrap;
 }
 
-.Nav ul {
-  list-style-type: none;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-*/
 .Nav button:hover{
   background-color: #555;
   color: white;
