@@ -34,10 +34,18 @@ export default function EditForm(){
         setThing({...postThing, [event.target.id]: event.target.value}); 
     };
 
-    const handleBookMark = () => {
-        setThing({...postThing, is_bookmarked: !postThing.is_bookmarked});
-    }
 
+    
+      
+    const handleCount = ("input", () => {
+    let wordCount = document.getElementById('word-count');
+    let contentInput = document.getElementById('content')
+        //trim() method removes whitespace from both ends of a string
+           let txt =contentInput.value.trim();
+        //txt.split(/\s+/) code will split the full classname of an element into an array containing every class
+           wordCount.textContent = txt.split(/\s+/).filter((item) => item).length;
+    });
+ 
     // MOVE TO HELPER FUNCTIONS
 
     useEffect(() => {
@@ -88,26 +96,27 @@ export default function EditForm(){
                 />
                 {/* Content Of Post */}
                 <label htmlFor='content'>Write Post</label>
-                <input
+                <textarea
+                 rows='20' 
+                 cols={'50'}
                 id='content'
                 value={postThing.content}
                 type='text'
                 onChange={handleTextChange}
                 require
                 />
-                <label htmlFor='is_bookmarked'>BookMark:</label>
-                <input
-                id='is_bookmarked'
-                type='checkbox'
-                onChange={handleBookMark}
-                checked={postThing.is_bookmarked}
-                />
+                {/* <>{wordCount()}</> */}
+                <div>
+                    <h3 id="word-count">{handleCount()}</h3>
+                    <p>words</p>
+                </div>
                 <br/>
                 <input type='submit'/>
-            </form>
-            <Link to={`/posts/${id}`}>
+                &nbsp;
+                <Link to={`/posts/${id}`}>
                 <button>Cancel</button>
-            </Link>
+               </Link>
+            </form>
         </div>
     );
 };
