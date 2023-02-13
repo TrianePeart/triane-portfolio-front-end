@@ -18,11 +18,11 @@ function Posts(){
     const sortPosts = posts.sort((a, b) => b.id - a.id); 
     // sorting it by date so I can find stuff
     return(
-        <div className='Posts'>
-            <ul className='posts'>
+        <div className='card'>
+            <ul className='postsUL'>
                 {sortPosts.map((post) =>{
                     return (
-                        <li key={post.id}>
+                        <li className='card' key={post.id}>
                             <Post post={post}/>
                              {post.is_liked ? <span>💝</span> : null} 
                              {/* place these in a div when doing css */}

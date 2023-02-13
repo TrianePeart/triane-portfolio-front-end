@@ -96,8 +96,8 @@ export default function EditForm(){
                 {/* Content Of Post */}
                 <label htmlFor='content'>Write Post</label>
                 <textarea
-                 rows='20' 
-                 cols={'50'}
+                rows='20' 
+                cols={'50'}
                 id='content'
                 value={postThing.content}
                 type='text'

@@ -1,97 +1,85 @@
 .App {
   text-align: center;
+  font-family: Georgia;
+  /* background: repeating-linear-gradient(
+      190deg,
+      rgba(255, 0, 0, 0.5) 40px,
+      rgba(255, 153, 0, 0.5) 80px,
+      rgba(255, 255, 0, 0.5) 120px,
+      rgba(0, 255, 0, 0.5) 160px,
+      rgba(0, 0, 255, 0.5) 200px,
+      rgba(75, 0, 130, 0.5) 240px,
+      rgba(238, 130, 238, 0.5) 280px,
+      rgba(255, 0, 0, 0.5) 300px
+    ), repeating-linear-gradient(
+      -190deg,
+      rgba(255, 0, 0, 0.5) 30px,
+      rgba(255, 153, 0, 0.5) 60px,
+      rgba(255, 255, 0, 0.5) 90px,
+      rgba(0, 255, 0, 0.5) 120px,
+      rgba(0, 0, 255, 0.5) 150px,
+      rgba(75, 0, 130, 0.5) 180px,
+      rgba(238, 130, 238, 0.5) 210px,
+      rgba(255, 0, 0, 0.5) 230px
+    ), repeating-linear-gradient(23deg, red 50px, orange 100px, yellow 150px, green
+        200px, blue 250px, indigo 300px, violet 350px, red 370px); */
+
+
+
+/* Create the parallax scrolling effect */
+   
 }
 
+.test{
 
-body {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  /* This is the overall background just change later */
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGIhlyK5uqrUs8DsWTWa_eSayhiZ6Uhq-EoQ&usqp=CAU');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+
 }
 
-ul{
-  list-style: none;
-  width: 50%;
-  height:50%;
-  padding-left: 25%;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
 }
 
-
-
-li{
-  /* width: 700px;  */
-  box-sizing: content-box;
-  display: grid;
-  border-style: inset; 
-  border-top-width: 1px; 
-  border-color: white; 
-  padding: 18%;
-  border-bottom-right-radius:20%;
-  border-top-left-radius:20%;
-  text-decoration: none;
-  margin-bottom: 20px;
-  text-align: center;
-  white-space: break-spaces;
-  position: relative;
-  background-color: black;
-  /* transition: transform .2s; */
-  /* I can't see so...  */
+/* nav ul {
+  display: none;
 }
 
-/* li:hover{
-  transform: scale(1.5);
-  /* The hover that makes the LI big 
+nav ul li:hover > ul {
+  display: block;
 } */
 
-form {
-  width: 150px;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-input[type=text] {
-  display: grid;
-  justify-content: center;
-  outline: none;
-  margin:10px 0; 
-  transition: width 0.4s ease-in-out;
-  border: none;
-  border-bottom: 2px solid white;
-  background-color: #282c34;
-  color: white;
-  text-align: center;
-}
-
-input[type=text]focus {
-  width: 50%;
-}
-
-
-textarea{
-  margin-top: 10%;
-  padding:10%;
-  text-align: center;
-  border: outset 4px white;
-  resize: none;
-  background-color: #282c34;
-  color: white;
-  outline: none;
- 
+nav ul {
+  /* background: #efefef; 
+  background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+  background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+  background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%);  */
+  /* box-shadow: 0px 0px 9px rgba(0,0,0,0.15); */
+  padding: 0 20px;
+  border-radius: 10px;  
+  list-style: none;
+  position: relative;
+  display: inline-table;
 }
 
 
 
-h1 {
-font-family: cursive;
-position: relative;
-text-align: center;
-white-space: wrap;
+ button{
+  display: block; 
+  padding: 25px 40px;
+  color: #757575; 
+  text-decoration: none;
+}
+
+
+.Nav{
+  letter-spacing: 4px;
+  box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2); 
+  height: 50px;
 }
 
 .Nav button:hover{
@@ -100,21 +88,48 @@ white-space: wrap;
   box-shadow: 0 2px 2px 0 white, 0 3px 5px 0 white;
 } 
 
+
 .Nav button{
-  background-color: #282c34;
+  float: left; 
+  width: 200px; 
+  background: #4b545f;
+  box-shadow: 2px 2px 9px rgba(0,0,0,0.15);
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 20px;
+} 
+
+.card{
+  padding: 20px;
+  margin-top: 20px;
+  /* height:50%; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 2fr));
+  grid-gap: 20px;
+  /* align-items: center; */
+  /* justify-content: center  */
+ 
+ 
 }
 
-.Nav {
-  display: inline-table;
-  padding: 14px 16px;
-  /* float: left; */
-  overflow: hidden; 
-  margin-bottom: 5px;
-  position: relative;
+ul{
+  list-style: none;
+  width: 50%;
+  height:50%;
+  /* padding-left: ;
+  padding-right: 100%; */
+  overflow-wrap: break-word;
+  display: grid;
+ 
+  grid-template-rows: max-content 1fr;
 }
+
+li{
+  background-color: aliceblue;
+  box-shadow: 0 2px 2px 0 white, 0 3px 5px 0 black;
+}
+

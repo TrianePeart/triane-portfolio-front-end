@@ -23,6 +23,7 @@ export default function App() {
     <div className="App">
       <Router>
         <Nav/>
+        <div className='test'>
         <Routes>
           <Route path='/' element={<Login navFunction={setShowNav}/>}/>
           {/* FIGURE OUT IF SIGN UP NEEDS ITS OWN PAGE */}
@@ -32,6 +33,7 @@ export default function App() {
           <Route path='/posts/:id/edit' element={<Edit/>}/>
           <Route path="*" element={<FourOFour />} />
         </Routes>
+        </div>
       </Router>
     </div>
   );

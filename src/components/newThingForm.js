@@ -22,15 +22,10 @@ export default function NewThingForm(){
         created_at: '', 
     }); 
 
-    const createNew = (makeThing) => {
+    const createNew = () => {
         axios
-        .post(`${API}/posts`, makeThing)
-        .then(
-            () => {
-                navigate(`/posts`);
-            }, 
-            (error) => console.error(error)
-        )
+        .post(`${API}/posts`, postThing)
+        .then(() => navigate(`/posts`))
         .catch((c) => console.warn('catch', c));
     };
 
@@ -40,7 +35,7 @@ export default function NewThingForm(){
     };
 
     const handleTextChange = (event) => {
-        setThing({ ...postThing, [event.target.id]: event.target.value });
+        setThing({...postThing, [event.target.id]: event.target.value});
     };
 
     return(
@@ -69,21 +64,21 @@ export default function NewThingForm(){
                 type='text'
                 onChange={handleTextChange}
                 placeholder="Written By"
-                require
+                required
                 />
 
                 <br/>
                 <br/>
 
                 {/* Category Of Post */}
-                <label htmlFor='post_type'>Category:</label>
+                <label htmlFor='category'>Category:</label>
                 <input
                 id='post_type'
                 value={postThing.post_type}
                 type='text'
                 onChange={handleTextChange}
                 placeholder="Random, Article, Poetry..."
-                require
+                required
                 />
 
                 <br/>
@@ -92,21 +87,23 @@ export default function NewThingForm(){
                 {/* Content Of Post */}
                 <label htmlFor='content'>Write Post</label>
                 <textarea
+                rows='20' 
+                cols={'50'}
                 id='content'
                 value={postThing.content}
                 type='text'
                 onChange={handleTextChange}
-                require
+                required
                 />
 
-                 <br/>
-                 <br/>
+                <br/>
+                <br/>
 
             <input type='submit'/>
-            </form>
              <Link to={`/posts`}>
                  <button>Cancel</button>
              </Link>
+            </form>
         </div>
     );
 };

@@ -10,15 +10,13 @@ export default function PostDetails(){
     const [thing, setThing] = useState({})
     const navigate = useNavigate(); 
 
- 
+    // const handleLiked = () => {
+    //     setThing({...thing, is_liked: !thing.is_liked});
+    // }
 
-    const handleLiked = () => {
-        setThing({...thing, is_liked: !thing.is_liked});
-    }
-
-    const handleBookMark = () => {
-        setThing({...thing, is_bookmarked: !thing.is_bookmarked});
-    }
+    // const handleBookMark = () => {
+    //     setThing({...thing, is_bookmarked: !thing.is_bookmarked});
+    // }
 
     const deleteThing = () => {
      
@@ -76,7 +74,7 @@ export default function PostDetails(){
                 </>
             </div>
             <form>
-            <label htmlFor='is_liked'>Liked:</label>
+            {/* <label htmlFor='is_liked'>Liked:</label>
                 <input
                 id='is_liked'
                 type='checkbox'
@@ -89,7 +87,9 @@ export default function PostDetails(){
                 type='checkbox'
                 onChange={handleBookMark}
                 checked={thing.is_bookmarked}
-            />
+            /> */}
+
+            {/* CHANGE BACK TO STRING VERSION IT DIDN'T LIKE THIS */}
             </form>
         </article>
     );
