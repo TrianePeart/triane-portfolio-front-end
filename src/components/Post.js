@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export default function Post({post}){
     return(
-        <article className='testing'>
+        <article>
         <Link to={`/posts/${post.id}`}>
          <h2>{post.title}</h2>
         </Link>

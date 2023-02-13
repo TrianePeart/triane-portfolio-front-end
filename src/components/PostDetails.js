@@ -48,13 +48,15 @@ export default function PostDetails(){
     }, [id]);
 
     return(
-        <article className='Show'>
+        <article >
+            <div className='Show'>
             <h2>{thing.title}</h2>
             <h6>{thing.author}</h6>
             <p>{thing.post_type}</p>
             <p>{thing.content}</p>
             <p>{thing.create_at}</p>
             <p>{thing.update_at}</p>
+            </div>
             &nbsp;   &nbsp;    &nbsp;  &nbsp;   &nbsp;    &nbsp;  
               <div className='NavButtons'>
                 <>

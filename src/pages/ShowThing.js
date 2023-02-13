@@ -1,7 +1,7 @@
 import PostDetails from "../components/PostDetails"
 export default function ShowTing(){
     return(
-        <div>
+        <div className="otherB" >
             <PostDetails/>
         </div>
     )

@@ -15,7 +15,7 @@ function Posts(){
         .catch((error) => console.log(error))
     }, []);
 
-    const sortPosts = posts.sort((a, b) => b.id - a.id); 
+    const sortPosts = posts.sort((a, b) => a.id - b.id); 
     // sorting it by date so I can find stuff
     return(
         <div className='card'>

@@ -1,7 +1,7 @@
 import EditForm from "../components/EditThingsForm"
 export default function Edit(){
     return(
-        <div>
+        <div className="otherB">
             <EditForm/>
         </div>
     )

@@ -48,6 +48,7 @@ export default function NewThingForm(){
 
                 {/* Title Of Post*/} 
                 <label htmlFor='title'>Title:</label>
+                &nbsp;
                 <input
                 id='title'
                 value={postThing.title}
@@ -62,6 +63,7 @@ export default function NewThingForm(){
 
                 {/* Name Of Author */}
                  <label htmlFor='author'>Author Name:</label>
+                 &nbsp;
                 <input
                 id='author'
                 value={postThing.author}
@@ -76,6 +78,7 @@ export default function NewThingForm(){
 
                 {/* Category Of Post */}
                 <label htmlFor='category'>Category:</label>
+                &nbsp;
                 <input
                 id='post_type'
                 value={postThing.post_type}
@@ -90,6 +93,8 @@ export default function NewThingForm(){
 
                 {/* Content Of Post */}
                 <label htmlFor='content'>Write Post</label>
+                <br/>
+                <br/>
                 <textarea
                 rows='20' 
                 cols={'50'}
