@@ -20,9 +20,13 @@ export default function NewThingForm(){
         post_type: '',
         update_at: '', 
         created_at: '', 
+
+        is_liked:false,
+        is_bookmarked:false
     }); 
 
     const createNew = () => {
+        console.log(API)
         axios
         .post(`${API}/posts`, postThing)
         .then(() => navigate(`/posts`))
