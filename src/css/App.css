@@ -113,9 +113,8 @@ white-space: wrap;
 .Nav {
   display: inline-table;
   padding: 14px 16px;
-  float: left;
-  overflow: hidden;
+  /* float: left; */
+  overflow: hidden; 
   margin-bottom: 5px;
   position: relative;
-  justify-content: space-between;
 }

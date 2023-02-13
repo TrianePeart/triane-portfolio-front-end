@@ -34,7 +34,7 @@ export default function EditForm(){
 
     useEffect(() => {
         setWordCount(postThing.content.split(/\s+/).filter((item) => item).length)
-       },[postThing]);
+    },[postThing]);
     
     const handleTextChange = (event) => {
             setThing({...postThing, [event.target.id]: event.target.value});
