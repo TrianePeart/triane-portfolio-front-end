@@ -4,7 +4,7 @@ export default function Post({post}){
     return(
         <article>
         <Link to={`/posts/${post.id}`}>
-         <h2>{post.title}</h2>
+         <h2 className='hideMe'>{post.title}</h2>
         </Link>
          <h6>{post.author}</h6>
          <p>{post.post_type}</p>

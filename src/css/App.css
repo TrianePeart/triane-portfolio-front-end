@@ -17,9 +17,6 @@
 }
 
 
-
-
-
 .background, .otherB{
   margin-top: 50px;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGIhlyK5uqrUs8DsWTWa_eSayhiZ6Uhq-EoQ&usqp=CAU');
@@ -59,7 +56,6 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   text-align: center;
   padding: 14px 16px;
-  /* width: 200px;  */
   background: #037644;
   box-shadow: 2px 2px 9px rgba(0,0,0,0.15);
   color: white;
@@ -82,6 +78,7 @@ ul{
   height:50%;
   display: grid;
   grid-template-rows: max-content 1fr;
+
 }
 
 li, .Show {
@@ -94,11 +91,15 @@ li, .Show {
   white-space: pre-wrap;
 }
 
+.hideMe{
+  text-decoration: none;
+  color:#037644
+}
+
 .welcome{
-  position: relative;
-  top: 50%;  
+  position: relative; 
   width: 24em;
-  margin-top:25%;
+  margin-top:10%;
   border-right: 2px solid rgba(255,255,255,.75);
   font-size: 180%;
   text-align: center;
@@ -106,14 +107,16 @@ li, .Show {
   overflow: hidden;
   transform: translateY(-50%);  
   color:black;
-  font-family: cursive;
   border-right: .15em solid orange; 
-  /* 
+}
+
+.slogan{
   text-align: center;
   color:black;
-
   white-space: nowrap;
-  Transform: translateY(-50%);  */
+  Transform: translateY(-50%);
+  font-family: cursive; 
+
 }
 
 .anim-type{
@@ -142,4 +145,25 @@ textarea{
 input{
   outline: none;
   border: inset 1px orange;
+}
+
+.welcomelogo{
+  background-image: url('../assets/TransparentLogo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 300px;
+
+}
+
+.OhSnap{
+  background-image: url(../assets/WriteTingz404.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 700px;
 }

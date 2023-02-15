@@ -6,12 +6,13 @@ const API = process.env.REACT_APP_API
 
 
 export default function Search (){
-
-    const [searchPost, setPost] = useState({
-        title: '', 
-        author: '', 
-        post_type: '',
-    }); 
+    const [searchPost, setPost] = useState('');
+   
+//     const [searchPost, setPost] = useState({
+//         title: '', 
+//         author: '', 
+//         post_type: '',
+//     }); 
 
     const [data, setData] = useState([]); 
     const [filterData, setFilter] = useState([]);
@@ -32,9 +33,9 @@ export default function Search (){
       );
     };
 
-    const handleTextChange = (event) => {
-        setPost({...searchPost, [event.target.id]: event.target.value});
-};
+//     const handleTextChange = (event) => {
+//         setPost({...searchPost, [event.target.id]: event.target.value});
+// };
 
     return (
         <form onSubmit={handleSubmit}>

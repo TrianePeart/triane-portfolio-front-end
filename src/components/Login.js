@@ -1,7 +1,13 @@
+
 export default function Login(){
     return (
-        <div>
-            <h1 className="welcome anim-type" >Welcome To Write Tingz Login Page</h1>
-        </div>
+        <main>
+            <div className="welcome anim-type" >
+            <h1>Welcome To Write Tingz</h1>
+            </div>
+            <h3 className="slogan">Where Thoughts Come To Life</h3>
+            <div className="welcomelogo"/>
+        </main>
+     
     )
 }
