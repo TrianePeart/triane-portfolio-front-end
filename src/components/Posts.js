@@ -11,7 +11,11 @@ function Posts(){
     useEffect(() => {
         axios
         .get(`${API}/posts`)
-        .then((res) => setPost(res.data))
+        .then((res) => {
+            console.log(res)
+            setPost(res.data)
+        })
+            
         .catch((error) => console.log(error))
     }, []);
 
