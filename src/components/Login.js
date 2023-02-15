@@ -4,6 +4,7 @@ export default function Login(){
         <main>
             <div className="welcome anim-type" >
             <h1>Welcome To Write Tingz</h1>
+            {/* THIS IS HOVERING FIX IT */}
             </div>
             <h3 className="slogan">Where Thoughts Come To Life</h3>
             <div className="welcomelogo"/>
