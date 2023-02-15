@@ -18,11 +18,8 @@ export default function NewThingForm(){
         author: '', 
         content: '', 
         post_type: '',
-        update_at: '', 
+        updated_at: '', 
         created_at: '', 
-
-        is_liked:false,
-        is_bookmarked:false
     }); 
 
     const createNew = () => {
