@@ -95,16 +95,47 @@ li, .Show {
 }
 
 .welcome{
-  margin-top:50%;
+  position: relative;
+  top: 50%;  
+  width: 24em;
+  margin-top:25%;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);  
   color:black;
   font-family: cursive;
+  border-right: .15em solid orange; 
+  /* 
+  text-align: center;
+  color:black;
+
+  white-space: nowrap;
+  Transform: translateY(-50%);  */
 }
+
+.anim-type{
+  animation: typewriter 3s steps(20, end) 1s 1 normal both,
+             blinkTextCursor .5s step-end infinite normal;
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+}
+@keyframes blinkTextCursor{
+  from, to { border-color: transparent }
+  10% { border-color: orange }
+}
+
 
 textarea{
   text-align: center;
   border: outset 4px orange;
   resize: none;
-  color: white;
+  color: black;
   outline: none;
 }
 
