@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
-.Nav button:hover{
+.cancel, .sub, .Nav button:hover{
   background-color: #551C11;
   color: white;
   box-shadow: 0 2px 2px 0 black, 0 3px 5px 0 black;
@@ -158,6 +158,16 @@ input{
 
 }
 
+.work{
+  background-image: url('../assets/TransparentLogo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+
 .OhSnap{
   background-image: url(../assets/WriteTingz404.png);
   background-size: contain;
@@ -176,11 +186,19 @@ input{
   border-radius: 5px;
 }
 
-.prompt{
-  color: black
-}
+
 
 .work{
   margin-top: 200px;
   color:black
+}
+
+input[type='checkbox'] {
+  accent-color:green;
+  color:aqua;
+}
+
+input[type='checkbox']:after {
+  box-shadow: 10px; 
+  color:aqua
 }

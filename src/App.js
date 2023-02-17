@@ -13,7 +13,6 @@ import Show from './pages/ShowThing';
 import Nav from './components/Nav';
 import Login from './components/Login';
 import Prompts from './components/Prompts';
-import { useState } from 'react';
 
 
 import '../src/css/App.css';
@@ -27,12 +26,11 @@ export default function App() {
         <Nav/>
         <Routes>
           <Route path='/' element={<Login/>}/>
-          {/* FIGURE OUT IF SIGN UP NEEDS ITS OWN PAGE */}
           <Route path='/posts' element={<Home/>}/>
           <Route path='/posts/new' element={<NewPost/>}/>
           <Route exact path='/posts/:id' element={<Show/>}/>
           <Route path='/posts/:id/edit' element={<Edit/>}/>
-          <Route path='/post/prompts' element={<Prompts/>}/>
+          <Route path='/posts/prompts' element={<Prompts/>}/>
           <Route path="*" element={<FourOFour />} />
         </Routes>
       </Router>

@@ -9,9 +9,9 @@ export default function Generator (e){
     const [prompts, setPrompts] = useState(() => randomize())
 
     return (
-        <div>
+        <div className='gen'>
             <p id='prompt'>{prompts}</p>
-            <button onClick={() => setPrompts(randomize())}>Generate Prompts</button>
+            <button className='sub' onClick={() => setPrompts(randomize())}>Generate Prompts</button>
         </div>
     )
 }

@@ -14,6 +14,8 @@ export default function EditForm(){
         post_type: '',
         update_at: '', 
         created_at: '', 
+        is_liked: false, 
+        is_bookmarked: false,
     }); 
 
     const [wordCount, setWordCount] = useState(0);
@@ -54,6 +56,13 @@ export default function EditForm(){
         updateForm(postThing);
     };
 
+    const handleLiked = () => {
+        setThing({...postThing, is_liked: !postThing.is_liked});
+    }
+
+    const handleBookMark = () => {
+        setThing({...postThing, is_bookmarked: !postThing.is_bookmarked});
+    }
 
 
     return (
@@ -118,11 +127,28 @@ export default function EditForm(){
                     <p>{wordCount} words</p>
                 </div>
                 <br/>
-                <input type='submit'/>
-                &nbsp;
-                <Link to={`/posts/${id}`}>
-                <button>Cancel</button>
+                <input className='sub' type='submit'/>
+                <br/>
+                <br/>
+                <Link  to={`/posts/${id}`}>
+                <button className='cancel'>Cancel</button>
                </Link>
+               <br/>
+               <br/>
+               <label htmlFor='is_liked'>Liked:</label>
+                <input
+                id='is_liked'
+                type='checkbox'
+                onChange={handleLiked}
+                checked={postThing.is_liked}
+                />
+                 &nbsp;  &nbsp;  
+            <label htmlFor='is_bookmarked'>BookMark:</label>
+                <input
+                id='is_bookmarked'
+                type='checkbox'
+                onChange={handleBookMark}
+                checked={postThing.is_bookmarked}/>
             </form>
         </div>
     );

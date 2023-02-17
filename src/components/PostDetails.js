@@ -10,14 +10,6 @@ export default function PostDetails(){
     const [thing, setThing] = useState({})
     const navigate = useNavigate(); 
 
-    // const handleLiked = () => {
-    //     setThing({...thing, is_liked: !thing.is_liked});
-    // }
-
-    // const handleBookMark = () => {
-    //     setThing({...thing, is_bookmarked: !thing.is_bookmarked});
-    // }
-
     const deleteThing = () => {
      
         axios 
@@ -75,24 +67,6 @@ export default function PostDetails(){
                 <button onClick={handleDelete}>Delete</button>
                 </>
             </div>
-            <form>
-            {/* <label htmlFor='is_liked'>Liked:</label>
-                <input
-                id='is_liked'
-                type='checkbox'
-                onChange={handleLiked}
-                checked={thing.is_liked}
-                />
-            <label htmlFor='is_bookmarked'>BookMark:</label>
-                <input
-                id='is_bookmarked'
-                type='checkbox'
-                onChange={handleBookMark}
-                checked={thing.is_bookmarked}
-            /> */}
-
-            {/* CHANGE BACK TO STRING VERSION IT DIDN'T LIKE THIS */}
-            </form>
         </article>
     );
 };
