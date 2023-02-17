@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect} from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import axios from 'axios'
 const API = process.env.REACT_APP_API
@@ -22,6 +22,8 @@ export default function NewThingForm(){
         created_at: '', 
     }); 
 
+    const [wordCount, setWordCount] = useState(0);
+
     const createNew = () => {
         console.log(API)
         axios
@@ -38,6 +40,10 @@ export default function NewThingForm(){
     const handleTextChange = (event) => {
         setThing({...postThing, [event.target.id]: event.target.value});
     };
+
+    useEffect(() => {
+        setWordCount(postThing.content.split(/\s+/).filter((item) => item).length)
+    },[postThing]);
 
     return(
         <div className='NewThingz'>
@@ -101,7 +107,9 @@ export default function NewThingForm(){
                 onChange={handleTextChange}
                 required
                 />
-
+                  <div className='countDiv'>
+                    <p>{wordCount} words</p>
+                  </div>
                 <br/>
                 <br/>
 
