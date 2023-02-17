@@ -1,3 +1,5 @@
+//MOVE TO BACKEND
+
 export const words = [
     `Open the dictionary to any page and select the first word that catches your eye. Write the opening few paragraphs of a thrilling, suspenseful story using your selected word at least three times.`,
     `Write a synopsis of your version of the movie, Groundhog Day. What would your day look like and why?`,
@@ -37,3 +39,4 @@ export const words = [
     `There is no such thing as a truly unselfish deed. Defend this statement.`,
     `If you were to write an autobiography, how would it start?`,
 ]
+

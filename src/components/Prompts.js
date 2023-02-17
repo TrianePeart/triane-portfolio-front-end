@@ -8,7 +8,6 @@ export default function Prompts (){
     <div className='work'>
     <p>Write 250 words about:</p>
     <Generator dataset={words}/>
-    {/* hold information */}
     </div>
     )
   

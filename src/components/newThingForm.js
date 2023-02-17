@@ -3,12 +3,7 @@ import { useNavigate, Link } from 'react-router-dom'
 import axios from 'axios'
 const API = process.env.REACT_APP_API
 
-/* 
-FILE MEMOS: Submit not functioning. 
-Input and Textarea are not pleasing to the eye. Correct later
-get rid of breaks </br> in code and make cute with CSS
-*/
-   
+
 
 export default function NewThingForm(){
     let navigate = useNavigate();

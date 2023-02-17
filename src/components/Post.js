@@ -10,7 +10,6 @@ export default function Post({post}){
          <p>{post.post_type}</p>
          <p>{post.content}</p>
          <p>{post.created_at}</p>
-         {/* UPdate this to get rid of the time */}
         </article>
     )         
 }

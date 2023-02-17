@@ -30,7 +30,7 @@ function Posts(){
                         <li className='card' key={post.id}>
                             <Post post={post}/>
                              {post.is_liked ? <span>💝</span> : null} 
-                             {/* place these in a div when doing css */} 
+
                             {post.is_bookmarked ? <span>📑</span> : null}
                         </li>
                     );

@@ -7,4 +7,3 @@ export default function Home () {
         </div> 
     )
 }
-//post map that shows many post will be plugged in here maybe a search as well
