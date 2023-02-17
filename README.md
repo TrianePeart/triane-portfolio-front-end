@@ -12,7 +12,11 @@ This project will:
 
 ## Back-End Link
 https://github.com/TrianePeart/Triane-Portfolio-Backend/blob/main/README.md
-**Back End Web address**
+
+**Front End Web Address**
+https://gleaming-praline-9c7dea.netlify.app/
+
+**Back End Web Address**
 https://writetingz-deploy-backend.onrender.com
 
 ## Proposal:
