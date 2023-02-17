@@ -12,11 +12,11 @@ This project will:
 
 ## Back-End Link
 https://github.com/TrianePeart/Triane-Portfolio-Backend/blob/main/README.md
+**Back End Web address**
+https://writetingz-deploy-backend.onrender.com
 
 ## Proposal:
 I am creating a writing app where people can post their writing. 
-
-**USER STORIES**
 
 1. As a User, I will be greeted by a log-in modal on the landing page that asks for email, password or signup. 
 
@@ -61,8 +61,43 @@ https://trello.com/b/GFs2Fn7g/write-tings-to-do-board
 
 ## Final Results 
 
-**POST SCREENSHOT HERE WHEN DONE**
+**WELCOME PAGE**
 
+<img width="1438" alt="WELCOME" src="https://user-images.githubusercontent.com/87388431/219719003-29f45108-3e92-4bda-9566-2461eefe101e.png">
+
+
+**MAIN PAGE**
+
+<img width="1435" alt="SHOW_PAGE" src="https://user-images.githubusercontent.com/87388431/219719199-9c79a252-c9c3-4c77-a2a3-bdb4fde27842.png">
+
+
+**SHOW PAGE**
+
+<img width="1432" alt="SHOW_CARD" src="https://user-images.githubusercontent.com/87388431/219719839-4fff7529-4880-4cf3-854b-eb88a32db350.png">
+
+
+**EDIT PAGE**
+
+<img width="1439" alt="EDIT" src="https://user-images.githubusercontent.com/87388431/219719936-55249e59-881f-44df-811c-2a025c3954e5.png">
+
+**NEW PAGE**
+
+<img width="1429" alt="NEWPAGE" src="https://user-images.githubusercontent.com/87388431/219719752-2db42d1b-c5b9-4d4d-b855-3f63a7d79f32.png">
+
+**PROMPT PAGE**
+
+<img width="1433" alt="PROMPT_PAGE" src="https://user-images.githubusercontent.com/87388431/219719709-e8a481b8-f5c7-4de2-913b-33d71421a2be.png">
+
+
+**ERROR PAGE**
+
+<img width="1435" alt="ERROR_PAGE" src="https://user-images.githubusercontent.com/87388431/219719577-94d42b8e-6b7f-4bb1-866f-e227a5628f46.png">
+
+###ADDITIONAL RESOURCES USED
+
+I had attempted to use CHATGPT for small areas of code but found it didn't code how I liked so I took the machines idea and cleaned it how I liked for my word counter. 
+
+<img width="1190" alt="Screenshot 2023-02-17 at 12 17 40 PM" src="https://user-images.githubusercontent.com/87388431/219721233-218efc3f-bb26-44c2-9a4c-99d7eb1de033.png">
 
 ## Success criteria
 
