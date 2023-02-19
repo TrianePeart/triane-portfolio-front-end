@@ -290,13 +290,11 @@ outline: none;
   margin-left: 530px;
 } 
 
-@media screen and (min-width: 500px){
-  .log{
-  position: fixed;
-  margin-left: 300px;
-}
+@media screen and (min-width: 400px){
+
+  
 .prompt{
   position:fixed;
   height: 500px;
 }
-}
+} 
