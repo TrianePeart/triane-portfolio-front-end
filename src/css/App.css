@@ -6,7 +6,7 @@
 }
 
 
-.otherB{
+.otherB {
   margin-top: 50px;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGIhlyK5uqrUs8DsWTWa_eSayhiZ6Uhq-EoQ&usqp=CAU');
   background-position: center;
@@ -17,8 +17,50 @@
 }
 
 
-.background, .otherB{
+.background {
   margin-top: 80px;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGIhlyK5uqrUs8DsWTWa_eSayhiZ6Uhq-EoQ&usqp=CAU');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+ 
+}
+
+ .new{
+  margin-top: 80px;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGIhlyK5uqrUs8DsWTWa_eSayhiZ6Uhq-EoQ&usqp=CAU');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:670px;
+  background-size: cover;
+}
+
+.Triane{
+  margin-top: 80px;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGIhlyK5uqrUs8DsWTWa_eSayhiZ6Uhq-EoQ&usqp=CAU');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:670px;
+  background-size: cover;
+ 
+}
+
+.cardA{
+  margin: 10%;
+  background-color: #f2f2f2;
+  opacity: 90%;
+  height:500px
+}
+
+.About h1, p{
+  color: black;
+ opacity: none;
+}
+.new{
+  margin-top: 70px;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGIhlyK5uqrUs8DsWTWa_eSayhiZ6Uhq-EoQ&usqp=CAU');
   background-attachment: fixed;
   background-position: center;
@@ -40,7 +82,7 @@
 
 }
 
-.work{
+.prompt{
   background-image: url('../assets/TransparentLogo.png');
   background-size: contain;
   background-position: center;
@@ -64,7 +106,6 @@ h1, h2, h3, h4, h5, h6, .testing {
   font-family: "Playfair Display";
   letter-spacing: 5px;
 }
-
 
 
 .Nav{
@@ -159,7 +200,6 @@ li, .Show {
 }
 
 
-
 .slogan{
   text-align: center;
   color:black;
@@ -168,7 +208,6 @@ li, .Show {
   font-family: cursive; 
 
 }
-
 
 
 
@@ -197,7 +236,7 @@ input{
 
 
 
-.work{
+.prompt{
   margin-top: 200px;
   color:black
 }
@@ -220,4 +259,44 @@ input[type='checkbox']:after {
 .testing{
   list-style: none;
   
+}
+
+.audio-player, audio {
+  width: 100%;
+  height: 50px;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.audio-player, .audio-playerH audio::-webkit-media-controls-panel {
+  background-color: #f2f2f2;
+}
+
+.audio-playerH{
+position: fixed;
+width: 100%;
+height: 50px;
+background-color: #f2f2f2;
+border: none;
+outline: none;
+}
+
+.log{
+  position: fixed;
+  margin-left: 530px;
+} 
+
+@media screen and (min-width: 500px){
+  .log{
+  position: fixed;
+  margin-left: 300px;
+}
+.prompt{
+  position:fixed;
+  height: 500px;
+}
 }

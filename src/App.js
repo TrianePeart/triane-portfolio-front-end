@@ -7,7 +7,7 @@ import FourOFour from '../src/pages/FourOFour';
 import Home from '../src/pages/Home';
 import NewPost from './pages/NewThing';
 import Show from './pages/ShowThing';
-
+import About from './pages/About';
 //COMPONENTS
 import Nav from './components/Nav';
 import Prompts from './components/Prompts';
@@ -26,6 +26,7 @@ export default function App() {
        <Nav/>
         <Routes> 
           <Route path='/' element={<Welcome />}/>
+          <Route path="/about" element={<About/>} />
           <Route path='/posts' element={<Home/>}/>
           <Route path='/posts/new' element={<NewPost/>}/>
           <Route exact path='/posts/:id' element={<Show/>}/>

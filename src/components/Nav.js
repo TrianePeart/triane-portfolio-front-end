@@ -9,6 +9,7 @@ export default function Nav (){
     return(
       
       <nav className='Nav'>
+            <Link to="/about"><button>About</button></Link>
             
             <Link to='/posts'><button>Posted Tingz</button></Link>
                 

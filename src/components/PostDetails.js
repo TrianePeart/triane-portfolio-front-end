@@ -1,7 +1,8 @@
 import { useState, useEffect} from 'react'; 
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-
+import song2 from '../assets/HoliznaCC0 _Waves.mp3.mp3'
+import ReactAudioPlayer from 'react-audio-player';
 
 const API = process.env.REACT_APP_API; 
 
@@ -41,6 +42,16 @@ export default function PostDetails(){
 
     return(
         <article >
+            <div className="audio-player">
+            <ReactAudioPlayer
+            src={song2}
+            autoPlay
+            controls
+            volume={0.5}
+            loop
+            preload="auto"
+            />
+           </div>
             <div className='Show'>
             <h2>{thing.title}</h2>
             <h6>{thing.author}</h6>
