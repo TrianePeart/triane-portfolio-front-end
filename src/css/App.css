@@ -18,13 +18,16 @@
 
 
 .background, .otherB{
-  margin-top: 50px;
+  margin-top: 80px;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGIhlyK5uqrUs8DsWTWa_eSayhiZ6Uhq-EoQ&usqp=CAU');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;  
+ 
 }
+
+
 
 .welcomelogo{
   background-image: url('../assets/TransparentLogo.png');
@@ -57,7 +60,7 @@
   height: 700px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .testing {
   font-family: "Playfair Display";
   letter-spacing: 5px;
 }
@@ -129,11 +132,6 @@ button{
   grid-gap: 20px;
   overflow-wrap: break-word;
 }
-
- 
-
-
-
 
 
 ul{
@@ -213,3 +211,13 @@ input[type='checkbox']:after {
   box-shadow: 10px; 
   color:aqua
 } 
+
+.pfp{
+  margin-top: 1%;
+  height: 40px;
+}
+
+.testing{
+  list-style: none;
+  
+}

@@ -7,6 +7,7 @@ export default function Nav (){
 
 
     return(
+      
       <nav className='Nav'>
             
             <Link to='/posts'><button>Posted Tingz</button></Link>
@@ -15,7 +16,8 @@ export default function Nav (){
 
             <Link to='/posts/prompts'><button>Prompts</button></Link>
 
-            <img src={user ? user.photoURL: null}></img>
+            <img className='pfp' src={user ? user.photoURL: null}></img>
+        <div className='testing'><li>{user? `Welcome, ${user.displayName}`: null}</li></div>
             
         </nav>
     )
