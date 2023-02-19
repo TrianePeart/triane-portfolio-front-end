@@ -1,14 +1,5 @@
-# Full-stack Portfolio Project
-
-This project is designed to test all of the skills you've learned so far. By the end of this project, you should have a portfolio-ready project you can share on your resume as well as with potential employers.
-
-This project will:
-
-- Have a deployed back-end application.
-- Have a deployed front-end application.
-- Have a database with one or more tables.
-
-- Have a theme and unique product design.
+## Proposal:
+I am creating a writing app where people can post their writing. 
 
 ## Back-End Link
 https://github.com/TrianePeart/Triane-Portfolio-Backend/blob/main/README.md
@@ -19,14 +10,10 @@ https://gleaming-praline-9c7dea.netlify.app/
 **Back End Web Address**
 https://writetingz-deploy-backend.onrender.com
 
-## Proposal:
-I am creating a writing app where people can post their writing. 
 
-1. As a User, I will be greeted by a log-in modal on the landing page that asks for email, password or signup. 
+1. As a User, I will be greeted by a welcome page
 
-> If user does not have an account they will be redirected to sign up giving their username, email, and password. If they do have an account they will be navigated to the home page. 
-
-2. As a User, I will see several useful articles on display as well as a button that navigates the user to a create page or (write section) where they can create, post, edit and delete articles. 
+2. As a User, I will see several post on display as well as a button that navigates the user to a create page or (write section) where they can create, post, edit and delete articles. 
 
 3. As a User, I will be able to click and read the articles available. 
 
@@ -45,15 +32,6 @@ I am creating a writing app where people can post their writing.
 
 1. As a user, I can bookmark works that I enjoy. 
 
-1. As a user, I will be navigated to a TOS upon signup that suggests against copy infringement and protects admin from legal. 
-
-1. As a user pronouns will be available on profile. 
-
-1. As a user, I will see a comment, like, and view feature.
-
-**Data Base Diagram**
-
-<p align="center"> <img width="698" alt="Screenshot 2023-02-08 at 3 57 38 PM" src="https://user-images.githubusercontent.com/87388431/217649333-c57cfde1-c4cf-4f05-b9c0-9a19b2044281.png"></p>
 
 **JD suggests**
 >For this iteration, I would suggest creating the writings, maybe seeding some of the writings so that the user can see all writings. Focus on the crud for the writings. If you are able to get that done, you can actually easily count the words with a function in your front or back-end using a function so that part seems doable. I would hold off on the dictionary api. If you finish all this I would maybe work on bookmark next. copy infringement page is not a tough goal either. You could create a modal that popped up after a certain time with the TOS if you wanted and you have to click Agree in order to continue. That's a stretch goal though.
