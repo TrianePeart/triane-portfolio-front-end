@@ -82,8 +82,6 @@ https://trello.com/b/GFs2Fn7g/write-tings-to-do-board
 
 <img width="1395" alt="Screenshot 2023-02-20 at 3 18 10 PM" src="https://user-images.githubusercontent.com/87388431/220191746-921b5e2d-1b2d-4aac-8d76-c1df3b5d433c.png">
 
-<img width="1435" alt="Screenshot 2023-02-20 at 3 17 08 PM" src="https://user-images.githubusercontent.com/87388431/220191805-026c51e8-9575-47bd-bce0-e82d4ea166e0.png">
-
 **About page**
 
 <img width="1435" alt="Screenshot 2023-02-20 at 3 17 08 PM" src="https://user-images.githubusercontent.com/87388431/220191929-fc4c3315-6714-4e85-b536-fcb6cc59e679.png">
