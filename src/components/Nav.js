@@ -17,37 +17,9 @@ export default function Nav (){
 
             <Link to='/posts/prompts'><button>Prompts</button></Link>
 
-            <img className='pfp' src={user ? user.photoURL: null}></img>
+            <img alt='profilepic' className='pfp' src={user ? user.photoURL: null}></img>
         <div className='testing'><li>{user? `Welcome, ${user.displayName}`: null}</li></div>
             
         </nav>
     )
 }
-
-
-
-
-
-
-
-// export default function Nav (){
-
-
-
- 
-
-//     return(
-//         <nav className='Nav'>
-//           
-
-//             <Link to='/posts'><button>Posted Tingz</button></Link>
-                
-//             <Link to='/posts/new'><button>New Ting</button></Link>
-
-//             <Link to='/posts/prompts'><button>Prompts</button></Link>
-
-//             <img src={user ? user.photoURL: null}></img>
-  
-//         </nav>
-//     )
-// }

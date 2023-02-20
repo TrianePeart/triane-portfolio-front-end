@@ -14,6 +14,8 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
+console.log(app)
+
 export const auth = getAuth();
 auth.useDeviceLanguage();
 //Create an instance of the auth. By invoking the function and saving value in variable. 

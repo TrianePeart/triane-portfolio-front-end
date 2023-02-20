@@ -12,13 +12,14 @@ export default function Login(){
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     useEffect(() => {
+
      if (user) {
        setIsLoggedIn(true);
        navigate("/posts");
      }else{
       navigate('/')
      }
-   }, [user]);
+   }, [user, navigate]);
 
    const handleSignIn = () =>{
     signInWithGoogle()

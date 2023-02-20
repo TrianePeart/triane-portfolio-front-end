@@ -1,4 +1,3 @@
-import Login from "../components/Login"
 import song4 from '../assets/HoliznaCC0_2HourDelay.mp3'
 import ReactAudioPlayer from 'react-audio-player';
 export default function About () {
@@ -27,11 +26,11 @@ export default function About () {
          
        <a href="https://github.com/TrianePeart"><img alt="GitHub followers" src="https://img.shields.io/badge/Github-Follow%20me-blue?/github/followers/TrianePeart?style=for-the-badge"/></a>
        <br/>
-        <a href=""><img alt='CodeWars Link' src="https://img.shields.io/badge/CodeWars-Challenge%20me-blue?style=for-the-badge&logo=appveyor"/></a>
+        <a href="https://www.codewars.com/users/TheDemi-GirlHasNoName"><img alt='CodeWars Link' src="https://img.shields.io/badge/CodeWars-Challenge%20me-blue?style=for-the-badge&logo=appveyor"/></a>
 
         &nbsp;
 
-        <a href="https://www.codewars.com/users/TheDemi-GirlHasNoNamehttps://www.linkedin.com/in/trianepeart"><img alt="Linked In" src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=appveyor"/></a>
+        <a href="https://www.linkedin.com/in/trianepeart"><img alt="Linked In" src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=appveyor"/></a>
         </div>
         </div>
         </div>
