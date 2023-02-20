@@ -76,7 +76,7 @@ https://trello.com/b/GFs2Fn7g/write-tings-to-do-board
 <img width="1435" alt="ERROR_PAGE" src="https://user-images.githubusercontent.com/87388431/219719577-94d42b8e-6b7f-4bb1-866f-e227a5628f46.png">
 
 
-##Updates
+## Updates
 
 **Google auth for sign in and welcome**
 
