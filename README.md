@@ -5,7 +5,7 @@ I am creating a writing app where people can post their writing.
 https://github.com/TrianePeart/Triane-Portfolio-Backend/blob/main/README.md
 
 **Front End Web Address**
-https://gleaming-praline-9c7dea.netlify.app/
+https://spiffy-smakager-04198e.netlify.app/posts
 
 **Back End Web Address**
 https://writetingz-deploy-backend.onrender.com
@@ -75,12 +75,36 @@ https://trello.com/b/GFs2Fn7g/write-tings-to-do-board
 
 <img width="1435" alt="ERROR_PAGE" src="https://user-images.githubusercontent.com/87388431/219719577-94d42b8e-6b7f-4bb1-866f-e227a5628f46.png">
 
+
+##Updates
+
+**Google auth for sign in and welcome**
+
+<img width="1395" alt="Screenshot 2023-02-20 at 3 18 10 PM" src="https://user-images.githubusercontent.com/87388431/220191746-921b5e2d-1b2d-4aac-8d76-c1df3b5d433c.png">
+
+<img width="1435" alt="Screenshot 2023-02-20 at 3 17 08 PM" src="https://user-images.githubusercontent.com/87388431/220191805-026c51e8-9575-47bd-bce0-e82d4ea166e0.png">
+
+**About page**
+
+<img width="1435" alt="Screenshot 2023-02-20 at 3 17 08 PM" src="https://user-images.githubusercontent.com/87388431/220191929-fc4c3315-6714-4e85-b536-fcb6cc59e679.png">
+
+**Lofi music**
+
+<img width="678" alt="Screenshot 2023-02-18 at 8 59 21 PM" src="https://user-images.githubusercontent.com/87388431/220192007-2bd115c4-4044-4d95-a9b4-432021e576be.png">
+
+
+
 ###ADDITIONAL RESOURCES USED
 
 I had attempted to use CHATGPT for small areas of code but found it didn't code how I liked so I took the machines idea and cleaned it how I liked for my word counter. 
 
 <img width="1190" alt="Screenshot 2023-02-17 at 12 17 40 PM" src="https://user-images.githubusercontent.com/87388431/219721233-218efc3f-bb26-44c2-9a4c-99d7eb1de033.png">
 
+Used React Audio player
+
+https://www.npmjs.com/package/react-audio-player
+
+Tim: https://github.com/mckiernantim/firebase-react
 
 ## Getting Started
 
@@ -105,6 +129,6 @@ REACT_APP_API_URL=http://localhost:3333
 
 - `npm install` - install npm packages listed in `package.json`.
 - `npm start` - make sure your React app can start
-
+-  `npm i react-audio-player`
 
 
